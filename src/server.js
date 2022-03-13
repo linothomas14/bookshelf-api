@@ -6,7 +6,9 @@ const init = async () => {
     port: '5000',
     host: 'localhost',
     routes: {
-      cors: ['*'],
+      cors: {
+        origin: ['*'],
+      },
     },
   });
   server.route(routes);
